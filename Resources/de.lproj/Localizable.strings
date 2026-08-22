@@ -1,0 +1,185 @@
+/* Rotation – German. Keys are the English source strings. */
+
+/* Onboarding */
+"Rotation" = "Rotation";
+"Listening statistics for your Navidrome server." = "Hörstatistiken für deinen Navidrome-Server.";
+"rotation.example.org" = "rotation.beispiel.de";
+"Connect" = "Verbinden";
+"Look around first" = "Erst mal umsehen";
+"Rotation reads the play history of a Navidrome server you host yourself." = "Rotation liest die Wiedergabe-Historie eines Navidrome-Servers, den du selbst betreibst.";
+"Your Navidrome credentials." = "Deine Navidrome-Zugangsdaten.";
+"Username" = "Benutzername";
+"Password" = "Passwort";
+"Sign in" = "Anmelden";
+"Different server" = "Anderer Server";
+
+/* Navigation */
+"Overview" = "Übersicht";
+"History" = "Verlauf";
+"Wrapped" = "Rückblick";
+"Friends" = "Freunde";
+"Settings" = "Optionen";
+"Viewing %@" = "Du siehst %@";
+"Back to mine" = "Zurück zu mir";
+
+/* Periods */
+"7 days" = "7 Tage";
+"30 days" = "30 Tage";
+"90 days" = "90 Tage";
+"This year" = "Dieses Jahr";
+"All time" = "Gesamt";
+
+/* Headline numbers */
+"Plays" = "Wiedergaben";
+"Listening time" = "Hörzeit";
+"Artists" = "Künstler";
+"Tracks" = "Titel";
+"Active days" = "Aktive Tage";
+"Streak · days" = "Serie · Tage";
+"Current · days" = "Aktuell · Tage";
+"Longest · days" = "Längste · Tage";
+"Longest streak" = "Längste Serie";
+
+/* Cards */
+"Over time" = "Verlauf";
+"Time of day" = "Tageszeit";
+"Top artists" = "Top-Künstler";
+"Top tracks" = "Top-Titel";
+"Top albums" = "Top-Alben";
+"Top genre" = "Top-Genre";
+"Genres" = "Genres";
+"Newly discovered" = "Neu entdeckt";
+"Weekday and hour" = "Wochentag und Uhrzeit";
+"Recently played" = "Zuletzt gehört";
+"Minutes listened" = "Gehörte Minuten";
+"Nothing here for this period yet." = "Für diesen Zeitraum gibt es noch nichts.";
+
+/* Friends */
+"Only people who added each other can see each other's statistics." = "Statistiken sieht nur, wer sich gegenseitig hinzugefügt hat.";
+"Your friends" = "Deine Freunde";
+"Want to add you" = "Möchten dich hinzufügen";
+"Requested" = "Angefragt";
+"On this server" = "Auf diesem Server";
+"Nobody yet." = "Noch niemand.";
+"Nobody else has opened Rotation yet." = "Niemand sonst hat Rotation bisher geöffnet.";
+"Add" = "Hinzufügen";
+"Confirm" = "Bestätigen";
+"Remove" = "Entfernen";
+"Withdraw" = "Zurückziehen";
+"View" = "Ansehen";
+"Compare" = "Vergleichen";
+"Requested – it becomes visible once they confirm." = "Angefragt – sichtbar wird es, sobald es bestätigt wird.";
+"You are friends now." = "Ihr seid jetzt Freunde.";
+"Artists you share" = "Gemeinsame Künstler";
+"No overlap in this period yet." = "Noch keine Überschneidungen in diesem Zeitraum.";
+"Done" = "Fertig";
+"vs" = "vs";
+
+/* Wrapped */
+"Year" = "Jahr";
+"Share image" = "Bild teilen";
+"To share" = "Zum Teilen";
+"Sunset" = "Sonnenuntergang";
+"Mint" = "Minze";
+"Midnight" = "Nachtblau";
+"Coal" = "Kohle";
+"No data for this year." = "Für dieses Jahr gibt es keine Daten.";
+"Your artist of the year" = "Dein Künstler des Jahres";
+"Across the year" = "Über das Jahr";
+"Your year" = "Dein Jahr";
+"YOUR YEAR %@" = "DEIN JAHR %@";
+"It started with" = "Angefangen hat es mit";
+"Your hour" = "Deine Stunde";
+"New to you" = "Neu für dich";
+"%d%% of everything you played" = "%d %% deiner Wiedergaben";
+"compared with %d" = "gegenüber %d";
+"Rotation · Navidrome" = "Rotation · Navidrome";
+
+/* Settings */
+"Account" = "Konto";
+"About" = "Über";
+"User" = "Benutzer";
+"History since" = "Historie seit";
+"Plays in total" = "Wiedergaben gesamt";
+"Server" = "Server";
+"Findable by others" = "Für andere auffindbar";
+"Switched off you appear in no suggestion list. Existing friendships stay." = "Ausgeschaltet erscheinst du in keiner Vorschlagsliste. Bestehende Freundschaften bleiben bestehen.";
+"Sign out" = "Abmelden";
+"Use a different server" = "Anderen Server verwenden";
+"Every number comes from your Navidrome server's play history. Rotation only ever reads it." = "Alle Zahlen stammen aus der Wiedergabe-Historie deines Navidrome-Servers. Rotation greift ausschließlich lesend darauf zu.";
+"You are looking at the demo." = "Du siehst die Demo.";
+"The numbers come from an invented library that ships with the app. Connect your own Rotation server to see your own." = "Die Zahlen stammen aus einer erfundenen Bibliothek, die mit der App ausgeliefert wird. Verbinde deinen eigenen Rotation-Server, um deine eigenen zu sehen.";
+"Connect a server" = "Server verbinden";
+"GitHub" = "GitHub";
+
+/* Detail sheet */
+"No." = "Platz";
+"First heard" = "Zuerst gehört";
+"Last" = "Zuletzt";
+"Over the months" = "Über die Monate";
+"Tracks heard" = "Titel gehört";
+"There is no data for that." = "Dazu gibt es keine Daten.";
+"%d albums" = "%d Alben";
+
+/* Counts and units */
+"%d plays" = "%d Wiedergaben";
+"%d tracks" = "%d Titel";
+"%d artists" = "%d Künstler";
+"%d days" = "%d Tage";
+"%d:00" = "%d Uhr";
+"%dd %dh" = "%d T %d Std";
+"%dh %dm" = "%d Std %d Min";
+"%dm" = "%d Min";
+"just now" = "gerade eben";
+
+/* Errors */
+"That address does not look right." = "Diese Adresse sieht nicht richtig aus.";
+"Wrong username or password." = "Benutzername oder Passwort stimmt nicht.";
+"You are not allowed to see that." = "Das darfst du nicht sehen.";
+"Server not reachable (%@)." = "Server nicht erreichbar (%@).";
+"There is no Rotation server at that address." = "Unter dieser Adresse antwortet kein Rotation-Server.";
+"The demo data is missing." = "Die Demo-Daten fehlen.";
+
+/* Recap story */
+"Your year in music" = "Dein Jahr in Musik";
+"Twelve months, a few numbers and two questions." = "Zwölf Monate, ein paar Zahlen und zwei Fragen.";
+"That is how long you listened" = "So lange hast du zugehört";
+"%d plays on %d days" = "%1$d Wiedergaben an %2$d Tagen";
+"Who was your artist of the year?" = "Wer war dein Künstler des Jahres?";
+"How often did your favourite song play?" = "Wie oft lief dein Lieblingssong?";
+"Right!" = "Richtig!";
+"Not quite." = "Knapp daneben.";
+"Skip" = "Überspringen";
+"Your artist of the year" = "Dein Künstler des Jahres";
+"Your track of the year" = "Dein Song des Jahres";
+"Your top artists" = "Deine Top-Künstler";
+"Your top tracks" = "Deine Top-Songs";
+"Your genre" = "Dein Genre";
+"Your hour" = "Deine Stunde";
+"Your longest streak" = "Deine längste Strähne";
+"%d days in a row" = "%d Tage am Stück";
+"New to you" = "Neu für dich";
+"Against %d" = "Gegen %d";
+"That was your %d" = "Das war dein %d";
+"Watch as a story" = "Als Story ansehen";
+"Your %d recap is here" = "Dein Rückblick %d ist da";
+"Twelve months of music, told in two minutes." = "Zwölf Monate Musik, in zwei Minuten erzählt.";
+"Watch" = "Ansehen";
+"Recap" = "Rückblick";
+"Show the story on the recap page all year" = "Story ganzjährig im Rückblick zeigen";
+"Remind me about the recap" = "An den Rückblick erinnern";
+"The recap announces itself on the home screen from 1 December to 31 January. The switch above is about the button on the recap page; the reminder arrives on 1 December." = "Auf der Startseite meldet sich der Rückblick vom 1. Dezember bis 31. Januar. Der Schalter oben betrifft nur den Knopf auf der Rückblick-Seite; die Erinnerung kommt am 1. Dezember.";
+"Your recap is here" = "Dein Rückblick ist da";
+"Your year in music is waiting." = "Dein Jahr in Musik wartet auf dich.";
+"plays" = "Wiedergaben";
+
+/* Colour, preview and playlists */
+"Colour" = "Farbe";
+"The app icon follows along." = "Das App-Symbol wechselt mit.";
+"Create a playlist" = "Playlist erstellen";
+"Refresh the playlist" = "Playlist aktualisieren";
+"stop maintaining" = "nicht mehr pflegen";
+"%1$@ is in Navidrome – %2$d tracks, refreshed daily." = "%1$@ steht in Navidrome – %2$d Titel, täglich aktualisiert.";
+"No longer refreshed. The playlist stays in Navidrome." = "Wird nicht mehr aktualisiert. Die Playlist bleibt in Navidrome.";
+"Close" = "Schließen";
+"%1$d of %2$d questions right" = "%1$d von %2$d Fragen richtig";

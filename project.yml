@@ -1,0 +1,46 @@
+name: Rotation
+options:
+  bundleIdPrefix: org.rotationmusic
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+
+settings:
+  base:
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: G8GVCRD6S2
+    SWIFT_VERSION: "5.9"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    # Xcode's "update to recommended settings" asks for these; setting them
+    # here keeps the prompt away.
+    CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED: YES
+    ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOL_EXTENSIONS: YES
+    ENABLE_MODULE_VERIFIER: YES
+
+targets:
+  Rotation:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      # Info.plist is excluded on purpose: Xcode processes it into the bundle
+      # itself, and copying it as a resource as well makes two build steps
+      # write the same file.
+      - path: Resources
+        excludes:
+          - "Info.plist"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.rotationmusic.app
+        PRODUCT_NAME: Rotation
+        INFOPLIST_FILE: Resources/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        # One icon per accent; Accent.applyIcon switches between them.
+        ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES: "AppIcon-Mint AppIcon-Violet AppIcon-Ocean AppIcon-Gold AppIcon-Rose"
+        ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS: YES
+        CODE_SIGN_STYLE: Automatic
+        SWIFT_EMIT_LOC_STRINGS: YES
+        TARGETED_DEVICE_FAMILY: "1,2"

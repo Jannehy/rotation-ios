@@ -4,6 +4,15 @@ A native SwiftUI client for a [Rotation](https://github.com/Jannehy/rotation)
 server — your listening year, from your pocket.
 
 <p align="center">
+  <a href="https://apps.apple.com/app/id6804433285">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="docs/app-store-badge-white.svg">
+      <img src="docs/app-store-badge-black.svg" height="48" alt="Download on the App Store">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
   <img src="docs/screenshots/01-overview.png" width="24%" alt="Overview">
   <img src="docs/screenshots/02-artist.png" width="24%" alt="Artist detail">
   <img src="docs/screenshots/03-wrapped.png" width="24%" alt="The yearly recap">
@@ -37,8 +46,8 @@ listening year, complete with recap, entirely on the device.
 
 ## Installing
 
-From the App Store, once the app is through review. Until then, and for
-anything you build yourself:
+On the **[App Store](https://apps.apple.com/app/id6804433285)**. To build it
+yourself:
 
 ```bash
 brew install xcodegen

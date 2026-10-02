@@ -4,12 +4,7 @@ A native SwiftUI client for a [Rotation](https://github.com/Jannehy/rotation)
 server — your listening year, from your pocket.
 
 <p align="center">
-  <a href="https://apps.apple.com/app/id6804433285">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="docs/app-store-badge-white.svg">
-      <img src="docs/app-store-badge-black.svg" height="48" alt="Download on the App Store">
-    </picture>
-  </a>
+  <a href="https://apps.apple.com/app/id6804433285"><img src="docs/app-store-badge-black.svg" height="48" alt="Download on the App Store"></a>
 </p>
 
 <p align="center">

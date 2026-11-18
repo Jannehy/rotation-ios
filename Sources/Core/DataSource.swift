@@ -32,6 +32,12 @@ protocol DataSource {
     func writePlaylist(range: String, language: String) async throws -> PlaylistWritten
     /// Stops looking after it – the playlist itself stays in Navidrome.
     func dropPlaylist(range: String) async throws
+
+    /// Writes the year's most played songs into Navidrome, in order.
+    ///
+    /// Asking twice rewrites the same playlist instead of leaving a copy
+    /// behind, so the button may be pressed again without worry.
+    func wrappedPlaylist(year: Int, language: String) async throws -> WrappedPlaylistWritten
 }
 
 extension DataSource {

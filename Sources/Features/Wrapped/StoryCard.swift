@@ -432,6 +432,7 @@ struct StoryFinale: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(Palette.accent)
+                WrappedPlaylistButton(data: data, onDark: true)
                 Button(String(localized: "Close")) { answers.close() }
                     .font(.callout)
                     .foregroundStyle(.white.opacity(0.7))

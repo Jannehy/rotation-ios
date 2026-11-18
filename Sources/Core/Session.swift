@@ -20,6 +20,13 @@ final class Session: ObservableObject {
     @Published var isWorking = false
     /// Set while looking at a friend's numbers instead of one's own.
     @Published var viewing: Person?
+    /// The recap playlists written during this run, by year.
+    ///
+    /// The same button sits on the last story card and at the foot of the
+    /// recap. Pressing it in one place has to settle the other, and the recap
+    /// is not fetched again when the story closes – so the answer lives here
+    /// rather than in either view.
+    @Published var wrappedPlaylists: [Int: WrappedPlaylist] = [:]
 
     static let shared = Session()
 

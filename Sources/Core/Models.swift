@@ -68,6 +68,31 @@ struct PlaylistWritten: Codable {
     let tracks: Int
 }
 
+/// The recap playlist of one year.
+///
+/// Unlike a `ManagedPlaylist` this one is a snapshot: it is written when it is
+/// asked for and never refreshed on its own, because a year that is over does
+/// not change. `exists` says whether it has been written already.
+struct WrappedPlaylist: Codable {
+    let year: Int
+    let size: Int
+    let exists: Bool
+    let name: String
+    let tracks: Int
+    let createdAt: Int
+
+    enum CodingKeys: String, CodingKey {
+        case year, size, exists, name, tracks
+        case createdAt = "created_at"
+    }
+}
+
+struct WrappedPlaylistWritten: Codable {
+    let ok: Bool
+    let playlist: WrappedPlaylist
+    let tracks: Int
+}
+
 struct Season: Codable {
     let open: Bool
     let year: Int
@@ -275,11 +300,14 @@ struct Wrapped: Codable, Identifiable {
     let artistTrack: TrackEntry?
     /// The song behind the genre card.
     let genreTrack: TrackEntry?
+    /// Nil where there is nothing to write: a friend's year is not ours to put
+    /// into playlists, and the demo has no library behind it.
+    let playlist: WrappedPlaylist?
     let hasData: Bool
 
     enum CodingKeys: String, CodingKey {
         case year, years, user, summary, months, clock, tracks, artists, albums
-        case genres, discoveries, streak, devotion, previous
+        case genres, discoveries, streak, devotion, previous, playlist
         case topMonth = "top_month"
         case firstPlay = "first_play"
         case artistTrack = "artist_track"

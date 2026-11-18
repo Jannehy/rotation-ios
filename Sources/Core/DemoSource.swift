@@ -354,6 +354,7 @@ final class DemoSource: DataSource {
             genreTrack: topGenres(plays, limit: 1).first.flatMap { genre in
                 topTracks(plays.filter { $0.track.genre == genre.name }, limit: 1).first
             },
+            playlist: nil,
             hasData: !plays.isEmpty)
     }
 
@@ -376,6 +377,9 @@ final class DemoSource: DataSource {
         throw APIError.forbidden
     }
     func dropPlaylist(range: String) async throws {}
+    func wrappedPlaylist(year: Int, language: String) async throws -> WrappedPlaylistWritten {
+        throw APIError.forbidden
+    }
 
     func compare(with userID: String, period: Period) async throws -> Comparison {
         let (start, end, days) = bounds(period)

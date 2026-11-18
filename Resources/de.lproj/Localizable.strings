@@ -181,5 +181,13 @@
 "stop maintaining" = "nicht mehr pflegen";
 "%1$@ is in Navidrome – %2$d tracks, refreshed daily." = "%1$@ steht in Navidrome – %2$d Titel, täglich aktualisiert.";
 "No longer refreshed. The playlist stays in Navidrome." = "Wird nicht mehr aktualisiert. Die Playlist bleibt in Navidrome.";
+
+/* Die Playlist zum Jahresrückblick */
+"The year as a playlist" = "Das Jahr als Playlist";
+"The %1$d most played songs of %2$d, in that order, written into your library." = "Die %1$d meistgehörten Songs aus %2$d, in genau dieser Reihenfolge, in deine Bibliothek geschrieben.";
+"Save the top %d as a playlist" = "Top %d als Playlist speichern";
+"%1$@ is in your playlists – %2$d tracks, in order." = "%1$@ stehen in deinen Playlists – %2$d Titel, der Reihe nach.";
+"Write it again" = "Neu schreiben";
+"The playlist could not be created." = "Die Playlist konnte nicht angelegt werden.";
 "Close" = "Schließen";
 "%1$d of %2$d questions right" = "%1$d von %2$d Fragen richtig";

@@ -42,6 +42,7 @@ struct WrappedView: View {
                         topLists(data)
                         months(data)
                         facts(data)
+                        playlistSection(data)
                         shareSection(data)
                     } else if data != nil {
                         Text("No data for this year.")
@@ -83,6 +84,19 @@ struct WrappedView: View {
                 Text(String(data.year)).font(.headline)
             }
             Spacer()
+        }
+    }
+
+    /// The year as a playlist: written when asked for, never on its own.
+    @ViewBuilder
+    private func playlistSection(_ data: Wrapped) -> some View {
+        if data.playlist != nil {
+            VStack(alignment: .leading, spacing: 10) {
+                Text(String(localized: "The year as a playlist").uppercased())
+                    .font(.caption2.weight(.semibold))
+                    .foregroundStyle(.secondary)
+                WrappedPlaylistButton(data: data)
+            }
         }
     }
 

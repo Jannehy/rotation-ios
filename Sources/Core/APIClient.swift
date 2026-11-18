@@ -182,6 +182,12 @@ final class APIClient: DataSource {
                        as: PlaylistWritten.self)
     }
 
+    func wrappedPlaylist(year: Int, language: String) async throws -> WrappedPlaylistWritten {
+        try await post("api/wrapped/playlist",
+                       body: ["year": year, "lang": language],
+                       as: WrappedPlaylistWritten.self)
+    }
+
     func dropPlaylist(range: String) async throws {
         var request = URLRequest(url: url("api/playlists/\(range)"))
         request.httpMethod = "DELETE"

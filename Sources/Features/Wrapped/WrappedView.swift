@@ -88,13 +88,14 @@ struct WrappedView: View {
     }
 
     /// The year as a playlist: written when asked for, never on its own.
+    ///
+    /// It wears the same card as everything around it. Loose on the grouped
+    /// background it read as something that had come adrift between the facts
+    /// and the share card, rather than as a part of the page.
     @ViewBuilder
     private func playlistSection(_ data: Wrapped) -> some View {
         if data.playlist != nil {
-            VStack(alignment: .leading, spacing: 10) {
-                Text(String(localized: "The year as a playlist").uppercased())
-                    .font(.caption2.weight(.semibold))
-                    .foregroundStyle(.secondary)
+            Card(String(localized: "The year as a playlist")) {
                 WrappedPlaylistButton(data: data)
             }
         }

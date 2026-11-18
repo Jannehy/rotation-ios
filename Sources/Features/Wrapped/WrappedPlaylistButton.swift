@@ -60,8 +60,11 @@ struct WrappedPlaylistButton: View {
                             .tint(.white)
                             .frame(maxWidth: .infinity)
                     } else {
+                        // Centred so that a label long enough to wrap does not
+                        // sit left under its own first line.
                         Text(String(format: String(localized: "Save the top %d as a playlist"),
                                     info.size))
+                            .multilineTextAlignment(.center)
                             .frame(maxWidth: .infinity)
                     }
                 }
